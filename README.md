@@ -81,7 +81,7 @@ This is an example of how to list things you need to use the software and how to
 * ROS2 Humble https://docs.ros.org/en/humble/Tutorials.html
 
 ### Installation (PC)
-zz edit something
+
 1. Direct to the source folder of your ROS2 workspace
    ```sh
    cd ros2_ws/src
