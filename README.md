@@ -34,6 +34,7 @@ After the stamping is done, the robot moves to the default coordinate position, 
 
 ![image](https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-pc-pkg/assets/120554498/9498320c-75c2-4ccc-9268-fecebe606632)
 
+Note: For programs run in the Raspberry Pi, refer to https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-raspi-pkg.git
 
 ### Computer Vision
 
