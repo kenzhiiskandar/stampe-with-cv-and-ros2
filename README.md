@@ -2,7 +2,11 @@
 
 This project aims to stamp a particular object with a correct orientation on a conveyor belt system using a custom Dynamixel-motored Robot.
 
-https://github.com/kenzhiiskandar/stampe_conveyer_belt_ros2/assets/120554498/93bcf0f6-c90a-4e07-b2fc-a61b279affb1
+
+
+https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-pc-pkg/assets/120554498/4d6674b7-a081-4cc0-86ec-9c66c28fc185
+
+
 
 The main system compromises of several sub-systems as follows:
 
@@ -27,7 +31,8 @@ Once in position, the robot patiently awaits the approach of the stamped object 
 After the stamping is done, the robot moves to the default coordinate position, and waits until the next box triggers the program.
 
 ## Hardware & Software Architectures
-![image](https://github.com/kenzhiiskandar/stampe_conveyer_belt_ros2/assets/120554498/cbe6e14b-1db0-4e1f-b1c8-65a4596f51be)
+
+[Uploading MA4825.pdf…]()
 
 ### Computer Vision
 
