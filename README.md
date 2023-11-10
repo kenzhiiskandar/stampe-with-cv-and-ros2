@@ -98,8 +98,6 @@ This is an example of how you may give instructions on setting up your project l
    ```sh
    colcon build
    ```
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Installation (Raspberry Pi)
 1. In your Raspberry Pi, direct to the source folder of your ROS2 workspace
    ```sh
