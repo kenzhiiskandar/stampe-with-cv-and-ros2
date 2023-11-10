@@ -79,6 +79,7 @@ This calculated solution precisely positions all the joints, aligning the robot 
 
 ## Programs Directory
 * PC https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-pc-pkg.git
+  .
 ├── ma4825_py_pkg                            # Main ROS2 pkg folder directory
     ├── ma4825_py_pkg                   
          ├── compvis_with_ros2_script.py     # Main program
