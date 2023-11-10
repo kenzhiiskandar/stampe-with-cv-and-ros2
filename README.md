@@ -77,6 +77,48 @@ The coordinates captured by the external webcam are transformed from pixel coord
 
 This calculated solution precisely positions all the joints, aligning the robot to the defined offset coordinates. This process ensures accurate and controlled movements of the robotic arm.
 
+## Programs Directory
+* PC https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-pc-pkg.git
+├── ma4825_py_pkg                            # Main ROS2 pkg folder directory
+    ├── ma4825_py_pkg                   
+         ├── compvis_with_ros2_script.py     # Main program
+         ├── reference_compvis.py            # Reference for webcam detection before integrated to ROS2 
+         └── reference_test.py               # Reference for ROS2 testing
+    ├── package.xml                          # Packages included in the program
+    └── setup.py                             # ROS2 Setup
+├── my_interfaces
+    ├── msg                                  # ROS2 Custom Interfaces
+         ├── BlueDotCoord.msg     
+         ├── BoxCoord.msg            
+         ├── RedDotCoord.msg
+    └── srv
+├── yolov8s_custom_ma4825v3_results          
+    └── train                                  
+         └── weights
+              ├── best.pt                    # Custom object detection model
+              └── last.pt           
+└── README.md
+* Raspberry Pi git clone https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-raspi-pkg.git
+├── ma4825_py_pkg                            # Main ROS2 pkg folder directory
+    ├── ma4825_py_pkg                   
+         ├── Ax12.py                         # Dynamixel Library
+         ├── disengage.py                    # Python Program to disengage all the robot's joints
+         ├── main_run_motor.py               # Main Program
+         ├── reference_lgpio_testing.py      # Reference for Pi's GPIO testing using Python script
+         ├── reference_run_motor.py          # Reference to control the motor before integrated to ROS2
+         ├── reference_test.py               # Reference for ROS2 testing
+         ├── utils_camera.py                 # Frame transformation library of the webcam
+         └── utils_robot.py                  # Inverse Kinematics library of the robot arm
+    ├── package.xml                          # Packages included in the program
+    └── setup.py                             # ROS2 Setup
+├── my_interfaces
+    ├── msg                                  # ROS2 Custom Interfaces
+         ├── BlueDotCoord.msg     
+         ├── BoxCoord.msg            
+         ├── RedDotCoord.msg
+    └── srv
+└── README.md
+
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
