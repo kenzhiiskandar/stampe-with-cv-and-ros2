@@ -1,4 +1,5 @@
 # About the Project
+<< Note: For programs run in the Raspberry Pi, refer to https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-raspi-pkg.git >>
 
 This project aims to stamp a particular object with a correct orientation on a conveyor belt system using a custom Dynamixel-motored Robot.
 
