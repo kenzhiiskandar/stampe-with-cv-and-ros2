@@ -97,8 +97,17 @@ This calculated solution precisely positions all the joints, aligning the robot 
     └── train                                  
          └── weights
               ├── best.pt                    # Custom object detection model
-              └── last.pt           
+              └── last.pt
 └── README.md
+
+    .
+    ├── build                   # Compiled files (alternatively `dist`)
+    ├── docs                    # Documentation files (alternatively `doc`)
+    ├── src                     # Source files (alternatively `lib` or `app`)
+    ├── test                    # Automated tests (alternatively `spec` or `tests`)
+    ├── tools                   # Tools and utilities
+    ├── LICENSE
+    └── README.md
 * Raspberry Pi git clone https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-raspi-pkg.git
 ├── ma4825_py_pkg                            # Main ROS2 pkg folder directory
     ├── ma4825_py_pkg                   
