@@ -32,7 +32,8 @@ After the stamping is done, the robot moves to the default coordinate position, 
 
 ## Hardware & Software Architectures
 
-[Uploading MA4825.pdf…]()
+![image](https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-pc-pkg/assets/120554498/9498320c-75c2-4ccc-9268-fecebe606632)
+
 
 ### Computer Vision
 
