@@ -78,56 +78,96 @@ The coordinates captured by the external webcam are transformed from pixel coord
 This calculated solution precisely positions all the joints, aligning the robot to the defined offset coordinates. This process ensures accurate and controlled movements of the robotic arm.
 
 ## Programs Directory
-* PC https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-pc-pkg.git
-  .
-├── ma4825_py_pkg                            # Main ROS2 pkg folder directory
-    ├── ma4825_py_pkg                   
-         ├── compvis_with_ros2_script.py     # Main program
-         ├── reference_compvis.py            # Reference for webcam detection before integrated to ROS2 
-         └── reference_test.py               # Reference for ROS2 testing
-    ├── package.xml                          # Packages included in the program
-    └── setup.py                             # ROS2 Setup
-├── my_interfaces
-    ├── msg                                  # ROS2 Custom Interfaces
-         ├── BlueDotCoord.msg     
-         ├── BoxCoord.msg            
-         ├── RedDotCoord.msg
-    └── srv
-├── yolov8s_custom_ma4825v3_results          
-    └── train                                  
-         └── weights
-              ├── best.pt                    # Custom object detection model
-              └── last.pt
-└── README.md
 
-    .
-    ├── build                   # Compiled files (alternatively `dist`)
-    ├── docs                    # Documentation files (alternatively `doc`)
-    ├── src                     # Source files (alternatively `lib` or `app`)
-    ├── test                    # Automated tests (alternatively `spec` or `tests`)
-    ├── tools                   # Tools and utilities
-    ├── LICENSE
-    └── README.md
-* Raspberry Pi git clone https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-raspi-pkg.git
-├── ma4825_py_pkg                            # Main ROS2 pkg folder directory
-    ├── ma4825_py_pkg                   
-         ├── Ax12.py                         # Dynamixel Library
-         ├── disengage.py                    # Python Program to disengage all the robot's joints
-         ├── main_run_motor.py               # Main Program
-         ├── reference_lgpio_testing.py      # Reference for Pi's GPIO testing using Python script
-         ├── reference_run_motor.py          # Reference to control the motor before integrated to ROS2
-         ├── reference_test.py               # Reference for ROS2 testing
-         ├── utils_camera.py                 # Frame transformation library of the webcam
-         └── utils_robot.py                  # Inverse Kinematics library of the robot arm
-    ├── package.xml                          # Packages included in the program
-    └── setup.py                             # ROS2 Setup
-├── my_interfaces
-    ├── msg                                  # ROS2 Custom Interfaces
-         ├── BlueDotCoord.msg     
-         ├── BoxCoord.msg            
-         ├── RedDotCoord.msg
-    └── srv
+* **PC** https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-pc-pkg.git
+
+```bash
+├── ma4825_py_pkg                                # Main ROS2 pkg folder directory
+│   ├── ma4825_py_pkg
+│   │   ├── compvis_with_ros2_script.py          # Main program
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   ├── reference_compvis.py                 # Reference for webcam detection before integrated to ROS2
+│   │   └── reference_test.py                    # Reference for ROS2 testing
+│   ├── package.xml                              # Packages included in the program
+│   ├── resource
+│   │   └── ma4825_py_pkg
+│   ├── setup.cfg
+│   ├── setup.py                                 # ROS2 Setup
+│   └── test
+├── my_interfaces                                # ROS2 Custom Interfaces
+│   ├── CMakeLists.txt
+│   ├── include
+│   │   └── my_interfaces
+│   ├── msg                                      # ROS2 Custom Interfaces msg
+│   │   ├── BlueDotCoord.msg
+│   │   ├── BoxCoord.msg
+│   │   └── RedDotCoord.msg
+│   ├── package.xml
+│   ├── src
+│   └── srv
+├── README.md
+└── yolov8s_custom_ma4825v3_results              # Custom object detection model folder
+    └── train
+        ├── args.yaml
+        ├── confusion_matrix.png
+        ├── events.out.tfevents.1698433074.84536e024cc3.904.0
+        ├── F1_curve.png
+        ├── P_curve.png
+        ├── PR_curve.png
+        ├── R_curve.png
+        ├── results.csv
+        ├── results.png
+        ├── train_batch0.jpg
+        ├── train_batch1.jpg
+        ├── train_batch2.jpg
+        ├── train_batch75.jpg
+        ├── train_batch76.jpg
+        ├── train_batch77.jpg
+        ├── val_batch0_labels.jpg
+        ├── val_batch0_pred.jpg
+        └── weights
+            ├── best.pt                          # Custom object detection model
+            └── last.pt
+```
+
+
+* **Raspberry Pi** https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-raspi-pkg.git
+
+```bash
+├── ma4825_py_pkg
+│   ├── ma4825_py_pkg                            # Main ROS2 pkg folder directory
+│   │   ├── Ax12.py                              # Dynamixel Library
+│   │   ├── disengage.py                         # Python Program to disengage all the robot's joints
+│   │   ├── __init__.py
+│   │   ├── main_run_motor.py                    # Main Program
+│   │   ├── reference_lgpio_testing.py           # Reference for Pi's GPIO testing using Python script
+│   │   ├── reference_run_motor.py               # Reference to control the motor before integrated to ROS2
+│   │   ├── reference_test.py                    # Reference for ROS2 testing
+│   │   ├── utils_camera.py                      # Frame transformation library of the webcam
+│   │   └── utils_robot.py                       # Inverse Kinematics library of the robot arm
+│   ├── package.xml                              # Packages included in the program
+│   ├── resource
+│   │   └── ma4825_py_pkg
+│   ├── setup.cfg
+│   ├── setup.py                                 # ROS2 Setup
+│   └── test
+│       ├── test_copyright.py
+│       ├── test_flake8.py
+│       └── test_pep257.py
+├── my_interfaces                                # ROS2 Custom Interfaces
+│   ├── CMakeLists.txt
+│   ├── include
+│   │   └── my_interfaces
+│   ├── msg                                      # ROS2 Custom Interfaces msg
+│   │   ├── BlueDotCoord.msg
+│   │   ├── BoxCoord.msg
+│   │   └── RedDotCoord.msg
+│   ├── package.xml
+│   ├── src
+│   └── srv
 └── README.md
+```
 
 ## Getting Started
 
