@@ -78,31 +78,40 @@ This calculated solution precisely positions all the joints, aligning the robot 
 
 This is an example of how you may give instructions on setting up your project locally.
 
-### Software Prerequisites
+### Software Prerequisites (For both PC and Raspberry Pi)
 
-This is an example of how to list things you need to use the software and how to install them.
-* Ubuntu 22.04 OS https://ubuntu.com/download/desktop
+* Ubuntu 22.04 OS
 
-* ROS2 Humble https://docs.ros.org/en/humble/Tutorials.html
+* ROS2 Humble
 
 ### Installation (PC)
 
-1. Direct to the source folder of your ROS2 workspace
+1. In your PC, direct to the source folder of your ROS2 workspace
    ```sh
    cd ros2_ws/src
    ```
-3. Clone the repo
+2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-pc-pkg.git
    ```
-4. Install NPM packages
+3. Build the directory in the ros2_ws directory
    ```sh
-   npm install
+   colcon build
    ```
-5. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Installation (Raspberry Pi)
+1. In your Raspberry Pi, direct to the source folder of your ROS2 workspace
+   ```sh
+   cd ros2_ws/src
+   ```
+2. Clone the repo
+   ```sh
+   git clone https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-pc-pkg.git
+   ```
+3. Build the directory in the ros2_ws directory
+   ```sh
+   colcon build
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
