@@ -94,6 +94,7 @@ This is an example of how you may give instructions on setting up your project l
    ```sh
    git clone https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-pc-pkg.git
    ```
+   Refer to the "compvis_with_ros2_script.py" inside the "ma4825_py_pkg folder" for the main file.
 3. Build the directory in the ros2_ws directory
    ```sh
    colcon build
@@ -105,11 +106,19 @@ This is an example of how you may give instructions on setting up your project l
    ```
 2. Clone the repo
    ```sh
-   git clone https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-pc-pkg.git
+   git clone https://github.com/kenzhiiskandar/stampe-with-cv-and-ros2-raspi-pkg.git
    ```
+   Refer to the "main_run_motor" inside the "ma4825_py_pkg folder" for the main file.
 3. Build the directory in the ros2_ws directory
    ```sh
    colcon build
    ```
-
-
+### Run the Program
+* In the command line in your PC
+   ```sh
+   ros2 run ma4825_py_pkg compvis_with_ros2_script
+   ```
+* In the command line in your Raspberry Pi
+     ```sh
+   ros2 run ma4825_py_pkg main_run_motor
+   ```
